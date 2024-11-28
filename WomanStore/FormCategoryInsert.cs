@@ -22,5 +22,10 @@ namespace WomanStore
             db.SaveChanges();
             MessageBox.Show("Category added Successfully");
         }
+
+        private void edtCategory_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
