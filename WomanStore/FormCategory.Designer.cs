@@ -1,4 +1,6 @@
-﻿namespace WomanStore
+﻿using System.Windows.Forms;
+
+namespace WomanStore
 {
     partial class FrmCategory
     {
@@ -30,6 +32,8 @@
         {
             this.btnInsert = new System.Windows.Forms.Button();
             this.gridshow = new System.Windows.Forms.DataGridView();
+            this.btnUpdate = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.gridshow)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,13 +56,35 @@
             this.gridshow.RowTemplate.Height = 24;
             this.gridshow.Size = new System.Drawing.Size(761, 327);
             this.gridshow.TabIndex = 2;
-            this.gridshow.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.FrmCategory_Load);
+            this.gridshow.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridshow_CellContentClick);
             // 
-            // FrmColor
+            // btnUpdate
+            // 
+            this.btnUpdate.Location = new System.Drawing.Point(505, 12);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(122, 64);
+            this.btnUpdate.TabIndex = 1;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(350, 12);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(122, 64);
+            this.btnDelete.TabIndex = 1;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // FrmCategory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.gridshow);
             this.Controls.Add(this.btnInsert);
             this.Name = "FrmCategory";
@@ -72,5 +98,7 @@
         #endregion
         private System.Windows.Forms.Button btnInsert;
         private System.Windows.Forms.DataGridView gridshow;
+        private System.Windows.Forms.Button btnUpdate;
+        private Button btnDelete;
     }
 }

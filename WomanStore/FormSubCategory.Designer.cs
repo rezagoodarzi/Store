@@ -55,7 +55,7 @@
             this.gridshow.TabIndex = 2;
             this.gridshow.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.FrmSubCategory_Load);
             // 
-            // FrmColor
+            // FrmSubCategory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;

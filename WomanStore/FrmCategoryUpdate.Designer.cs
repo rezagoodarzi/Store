@@ -1,6 +1,6 @@
 ﻿namespace WomanStore
 {
-    partial class FrmCategoryInsert
+    partial class FrmCategoryUpdate
     {
         /// <summary>
         /// Required designer variable.
@@ -32,7 +32,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.edtCategory = new System.Windows.Forms.TextBox();
             this.edtDescription = new System.Windows.Forms.TextBox();
-            this.btnInsert = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -68,29 +68,30 @@
             this.edtDescription.Size = new System.Drawing.Size(194, 23);
             this.edtDescription.TabIndex = 3;
             // 
-            // btnInsert
+            // btnUpdate
             // 
-            this.btnInsert.Location = new System.Drawing.Point(287, 284);
-            this.btnInsert.Name = "btnInsert";
-            this.btnInsert.Size = new System.Drawing.Size(113, 39);
-            this.btnInsert.TabIndex = 4;
-            this.btnInsert.Text = "اضافه کردن";
-            this.btnInsert.UseVisualStyleBackColor = true;
-            this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
+            this.btnUpdate.Location = new System.Drawing.Point(287, 284);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(113, 39);
+            this.btnUpdate.TabIndex = 4;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
-            // FrmCategoryInsert
+            // FrmCategoryUpdate
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(700, 450);
-            this.Controls.Add(this.btnInsert);
+            this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.edtDescription);
             this.Controls.Add(this.edtCategory);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Name = "FrmCategoryInsert";
-            this.Text = "اضافه کردن دسته بندی";
+            this.Name = "FrmCategoryUpdate";
+            this.Text = "آپدیت کردن دسته بندی";
+            this.Load += new System.EventHandler(this.FrmCategoryUpdate_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -102,6 +103,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox edtCategory;
         private System.Windows.Forms.TextBox edtDescription;
-        private System.Windows.Forms.Button btnInsert;
+        private System.Windows.Forms.Button btnUpdate;
     }
 }
