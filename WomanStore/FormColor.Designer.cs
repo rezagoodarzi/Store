@@ -52,6 +52,7 @@
             this.grdShow.RowTemplate.Height = 24;
             this.grdShow.Size = new System.Drawing.Size(761, 327);
             this.grdShow.TabIndex = 2;
+            this.grdShow.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdShow_CellContentClick);
             // 
             // FrmColor
             // 

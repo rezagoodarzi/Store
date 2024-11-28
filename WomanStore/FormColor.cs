@@ -81,8 +81,9 @@ namespace WomanStore
             grdShow.Columns["Name"].HeaderText = "رنگ";
         }
 
+        private void grdShow_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
-
-
+        }
     }
 }

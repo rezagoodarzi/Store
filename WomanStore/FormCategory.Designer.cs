@@ -28,46 +28,49 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnShow = new System.Windows.Forms.Button();
             this.btnInsert = new System.Windows.Forms.Button();
+            this.gridshow = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.gridshow)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnShow
-            // 
-            this.btnShow.Location = new System.Drawing.Point(344, 64);
-            this.btnShow.Name = "btnShow";
-            this.btnShow.Size = new System.Drawing.Size(130, 57);
-            this.btnShow.TabIndex = 0;
-            this.btnShow.Text = "نمایش";
-            this.btnShow.UseVisualStyleBackColor = true;
-            this.btnShow.Click += new System.EventHandler(this.btnShow_Click);
             // 
             // btnInsert
             // 
-            this.btnInsert.Location = new System.Drawing.Point(344, 197);
+            this.btnInsert.Location = new System.Drawing.Point(666, 12);
             this.btnInsert.Name = "btnInsert";
-            this.btnInsert.Size = new System.Drawing.Size(130, 57);
+            this.btnInsert.Size = new System.Drawing.Size(122, 64);
             this.btnInsert.TabIndex = 1;
             this.btnInsert.Text = "اضافه کردن";
             this.btnInsert.UseVisualStyleBackColor = true;
             this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
             // 
-            // FrmCategory
+            // gridshow
+            // 
+            this.gridshow.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridshow.Location = new System.Drawing.Point(27, 100);
+            this.gridshow.Name = "gridshow";
+            this.gridshow.RowHeadersWidth = 51;
+            this.gridshow.RowTemplate.Height = 24;
+            this.gridshow.Size = new System.Drawing.Size(761, 327);
+            this.gridshow.TabIndex = 2;
+            this.gridshow.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.FrmCategory_Load);
+            // 
+            // FrmColor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.gridshow);
             this.Controls.Add(this.btnInsert);
-            this.Controls.Add(this.btnShow);
             this.Name = "FrmCategory";
-            this.Text = "دسته بندی";
+            this.Text = "دسته";
+            this.Load += new System.EventHandler(this.FrmCategory_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.gridshow)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnShow;
         private System.Windows.Forms.Button btnInsert;
+        private System.Windows.Forms.DataGridView gridshow;
     }
 }
